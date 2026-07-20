@@ -1,46 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  font-family: "Segoe UI", Inter, system-ui, sans-serif;
   color: #0f172a;
   background: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-}
-
-.app-shell {
-  align-items: center;
-  display: flex;
+  min-width: 320px;
   min-height: 100vh;
-  justify-content: center;
-  padding: 24px;
+  background: #f8fafc;
 }
 
-.setup-card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  max-width: 560px;
-  padding: 28px;
+button,
+input,
+select,
+textarea {
+  font: inherit;
 }
 
-.eyebrow {
-  color: #2563eb;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0;
-  margin: 0 0 8px;
-  text-transform: uppercase;
+button {
+  cursor: pointer;
 }
 
-h1 {
-  font-size: 28px;
-  margin: 0 0 12px;
+button:disabled {
+  cursor: not-allowed;
 }
 
-p {
-  color: #475569;
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 0;
+.metric-number {
+  font-variant-numeric: tabular-nums;
+}
+
+.scrollbar-thin {
+  scrollbar-color: #cbd5e1 transparent;
+  scrollbar-width: thin;
 }
